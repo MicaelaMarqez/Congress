@@ -1,0 +1,57 @@
+html *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.titulo {
+    font-family: 'Bebas Neue', cursive;
+}
+.texto {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+body{
+    background-image: url(../assets/etienne-martin-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+main{
+    background-color: rgb(240, 240, 240, 0.9);
+    min-height: 70vh;
+}
+div#cabecera
+{
+    background-color: white;
+}
+div#cabecera img {
+    height: 75px;
+}
+div.imagen {
+    height: 200px;
+    width: 200px;
+    opacity: .95;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3%;
+}
+div.uno{
+    background-image: url(../assets/joakim-honkasalo-DurC25GdOvk-unsplash.jpg);
+    background-position: center;
+}
+div.dos{
+    background-image: url(../assets/ferran-fusalba-rosello-WgUHuGSWPVM-unsplash.jpg);
+}
+div.texto{
+    background-color: rgb(240, 240, 240, .7);
+    border-radius: 3%;
+    min-height: 40vh;
+}
+a.btn 
+{
+    background-color: #D7D7D8;
+}
+a.btn:hover
+{
+    background-color: #9F9FA3;
+}

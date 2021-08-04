@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>TGIF - Senator Congress 113</title>
+    <link rel="shortcut icon" href="./assets/capitolioIcon.png">
+</head>
+<body>
+    <header>
+        <div class="pt-2 bg-white d-flex justify-content-between px-5 align-items-end" id="cabecera">
+            <img src="./assets/Capitolio Logo.png" alt="Logo">
+            <a class="texto pb-1" href="mailto:info@tgif.net">info@tgif.net</a>
+        </div>
+        <nav class="navbar navbar-light bg-light">
+            <form class="titulo container-fluid justify-content-start">
+                <a class="btn me-2" type="button" href="./index.html">Home</a>
+                <div class="dropdown me-2">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Congress 113
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="./house_congress_113.html">House</a></li>
+                        <li><a class="dropdown-item" href="#">Senate</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-2">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Attendance
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="./house_attendance.html">House</a></li>
+                        <li><a class="dropdown-item" href="./senate_attendance.html">Senate</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Party Loyalty
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="./house_party_loyalty.html">House</a></li>
+                        <li><a class="dropdown-item" href="./senate_party_loyalty.html">Senate</a></li>
+                    </ul>
+                </div>
+            </form>
+        </nav>
+    </header>
+    <main class="px-5 py-3 ">
+        <div class="d-flex justify-content-between" >
+            <div class="texto px-3 py-3 col-12 col-lg-8">
+              <h1 class="titulo">Senator</h1>
+              <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
+            </div>
+            <div class="mt-3 col-4 d-flex justify-content-center">
+                <div class="imagen uno">
+                </div>
+            </div>
+        </div>
+        <div class="text-end cajaFiltros mx-4">
+          <div>
+            <label for="democrats">Democrats</label>
+            <input class="me-2" type="checkbox" name="filtroTipo" checked id="democrats" value="D">
+            <label for="republicans">Republicans</label>
+            <input class="me-2" type="checkbox" name="filtroTipo" checked id="republicans" value="R">
+            <label for="independents">Independents</label>
+            <input type="checkbox" name="filtroTipo" checked id="independents" value="ID">
+          </div>
+          <div>
+            <label for="selectEstado">Filter by State</label>
+            <select name="estado" id="selectEstado">
+            <option value="all">All States</option>
+            </select>
+          </div>
+        </div>
+        <table id="tablaData" class="mb-0 table table-striped table-dark">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Party</th>
+                    <th>State</th>
+                    <th>Years in Office</th>
+                    <th>Votes % s/Party</th>
+                </tr>
+            </thead>
+            <tbody id="tablaBody">
+            </tbody>
+        </table>
+    </main>
+    <footer class="py-2 bg-white text-center">
+        <p>@2016TGIF | All Rights Reserved</p>
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

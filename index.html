@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>TGIF - Home</title>
+    <link rel="shortcut icon" href="./assets/capitolioIcon.png">
+</head>
+<body>
+    <header>
+        <div class="pt-2 bg-white d-flex justify-content-between px-5 align-items-end" id="cabecera">
+            <img src="./assets/Capitolio Logo.png" alt="Logo">
+            <a class="texto pb-1" href="mailto:info@tgif.net">info@tgif.net</a>
+        </div>
+        <nav class="navbar navbar-light bg-light">
+            <form class="titulo container-fluid justify-content-start">
+                <a class="btn me-2" type="button" href="#">Home</a>
+                <div class="dropdown me-2">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Congress 113
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="./house_congress_113.html">House</a></li>
+                        <li><a class="dropdown-item" href="./senate_congress_113.html">Senate</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-2">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Attendance
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="./house_attendance.html">House</a></li>
+                        <li><a class="dropdown-item" href="./senate_attendance.html">Senate</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Party Loyalty
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="./house_party_loyalty.html">House</a></li>
+                        <li><a class="dropdown-item" href="./senate_party_loyalty.html">Senate</a></li>
+                    </ul>
+                </div>
+            </form>
+        </nav>
+    </header>
+    <main class="d-flex px-5 py-3 justify-content-between">
+        <div class="texto px-3 py-3 col-12 col-lg-8">
+            <div>
+                <h1 class="titulo">About Us</h1>
+                <p>Openness, accountability, and honesty define government transparency. In a free society, transparency is government's obligation to share information with citizens. It is at the heart of how citizens hold their public officials accountable. Here at TGIF we believe that government should be transparent.</p>
+                <p>Governments exist to serve the people. Information on how officials conduct the public business and spend taxpayer money must be readily available and easily understood. This transparency allows good and just governance. Transparency promotes accountability and provides information for citizens about what their Government is doing.</p>
+                <p>We also believe that government should be participatory. Public engagement enhances the Government's effectiveness and improves the quality of its decisions. Knowledge is widely dispersed in society, and public officials benefit from having access to that dispersed knowledge. We invite you to use our site to become actively engaged in American government.</p>
+                <p>TGIF works to disclose information in forms that the public can readily find and use. We solicit public feedback to identify information of greatest use to the public.</p>
+                <a class="collapsed" data-bs-toggle="collapse" href="#moreInfo" role="button" aria aria-expanded="false" id="readMore">Read More</a>
+            </div>
+            <div class="collapse" id="moreInfo">
+                <h2 class="titulo">Background History of Government Transparency</h2>
+                <p>In the West, the idea that government should be open to public scrutiny and susceptible to public opinion dates back at least to the time of the Enlightenment, when many philosophes made an attack on absolutist doctrine of state secrecy, a core part of their intellectual project. The passage of formal legislative instruments to this end can also be traced to this time with Sweden, for example, (which then included Finland as a Swedish-governed territory) enacting free press legislation as part of its constitution (Freedom of the Press Act, 1766). This approach, and that of the philosophes more broadly, is strongly related to recent historiography on the eighteenth-century public sphere.</p>
+                <p>Open government is widely seen to be a key hallmark of contemporary democratic practice and is often linked to the passing of freedom of information legislation. Scandinavian countries claim to have adopted the first freedom of information legislation, dating the origins of its modern provisions to the eighteenth century and Finland continuing the presumption of openness after gaining independence in 1917, passing its Act on Publicity of Official Documents in 1951 (superseded by new legislation in 1999).</p>
+                <p>The United States passed its Freedom of Information Act (FOIA) in 1966, FOIAs, Access to Information Acts (AIAs) or equivalent laws were passed in Denmark and Norway in 1970</p>
+                <a class="collapsed" data-bs-toggle="collapse" href="#moreInfo" role="button" aria aria-expanded="true" id="viewLess">View Less</a>
+            </div>
+        </div>
+        <div class="col-4 d-flex flex-column align-items-center">
+            <div class="imagen uno mb-5">
+            </div>
+            <div class="imagen dos">
+            </div>
+        </div>
+    </main>
+    <footer class="py-2 bg-white text-center">
+        <p>@2016TGIF | All Rights Reserved</p>
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
