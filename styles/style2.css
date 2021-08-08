@@ -10,15 +10,18 @@ html *{
     font-family: 'Nanum Gothic', sans-serif;
 }
 body{
+    height: 100vh;
     background-image: url(../assets/etienne-martin-2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
 }
 main{
     background-color: rgb(240, 240, 240, 0.9);
-    min-height: 70vh;
+    flex: 1;
 }
 div#cabecera
 {
